@@ -101,11 +101,11 @@ img {
     word-break: keep-all;
 }
 
-.talented-text h2{
+.lower-border-red{
     font-size: 3rem;
     position: relative;
 }
-.talented-text h2::after {
+.lower-border-red::after {
     content: "";
     background: #ff5678;
     display: block;
@@ -145,4 +145,54 @@ img {
 .watch-video svg {
     height: 60px;
     width: 60px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.light-background {
+    position: relative;
+}
+.light-background::before {
+    background: url('https://opendoodles.s3-us-west-1.amazonaws.com/clumsy.svg');
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: .2;
+}
+
+.grid-enjoy {
+    display: grid;
+    grid-template-areas: "number name name"
+                        "number name name"
+                        "number description description";
+    margin: 20px 0px;
+}
+
+.number {
+    grid-area: number;
+    padding: 10px 10px;
+    font-size: 2.8rem;
+    color: #eee;
+    text-shadow: -1px 1px 2px rgb(119, 119, 119),
+				  1px 1px 2px rgb(119, 119, 119)    ,
+				  1px -1px 0 rgb(119, 119, 119) ,
+				  -1px -1px 0 rgb(119, 119, 119)    ;
+}
+.enjoy-name {
+    grid-area: name;
+    padding: 15px 0px;
+}
+.enjoy-description {
+    grid-area: description;
 }
