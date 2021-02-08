@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900 &family=Source+Sans+Pro&display=swap');
 
 *, *::after, *::before {
     margin: 0;
@@ -10,9 +10,13 @@ body {
     background: rgba(255, 255, 255, 0.938);
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.5;
+    color: #020e35;
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Merriweather', serif;
+}
+button {
+    cursor: pointer;
 }
 nav {
     display: flex;
@@ -34,11 +38,12 @@ nav {
 
 .navbar-logo img{
     height: 50px;
+    width: 50px;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #020e35;
     text-transform: uppercase;
     padding: 10px 20px;
     font-family: 'Merriweather', serif;
@@ -91,6 +96,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     max-height: 600px;
+    margin-bottom: 8rem;
 }
 
 .talented-image {
@@ -100,6 +106,7 @@ header {
 img {
     width: 100%;
     height: 100%;
+    max-width: 800px;
 }
 
 .talented-text {
@@ -125,6 +132,7 @@ img {
     position: absolute;
     bottom: 0px;
     z-index: -1;
+    left: 0;
 }
 
 .learn-more {
@@ -164,7 +172,7 @@ img {
 
 .row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .col {
     display: flex;
@@ -180,9 +188,9 @@ img {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    left: -200px;
+    bottom: -100px;
+    right: -100px;
     opacity: .1;
 }
 
@@ -206,6 +214,11 @@ img {
 				  1px -1px 0 rgb(119, 119, 119),
 				  -1px -1px 0 rgb(119, 119, 119);
 }
+
+.things-we-enjoy .row {
+    justify-content: space-evenly;
+}
+
 .enjoy-name {
     grid-area: name;
     padding: 15px 0px;
@@ -217,12 +230,13 @@ img {
 }
 
 .things-we-enjoy {
-    margin-bottom: 3rem;
+    margin-bottom: 12rem;
 }
 
 .customers {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 10rem;
 }
 h2 {
     font-size: 3rem;
@@ -253,7 +267,7 @@ h2 {
 
 .users-header {
     text-align: center;
-    width: 380px;
+    width: 402px;
     margin: 4rem auto;
     word-break: keep-all;
     height: min-content;
@@ -310,3 +324,113 @@ h2 {
 .user-work {
     color: #494949;
 }
+.user-button button{
+    margin: 0 auto;
+    display: block;
+}
+
+.user-more {
+    padding: 1rem 3rem;
+}
+
+.work-heading {
+    text-align: center;
+}
+
+.previous-work h2{
+    text-align: center;
+}
+
+.carousel-buttons {
+    background: none;
+    border: none;
+    margin: 2.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.carousel-buttons:hover {
+    background: #ff5678;
+    color: #fff;
+    padding: 0.2rem;
+    text-transform: uppercase;
+}
+
+.work-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4 100px);
+    gap: 20px;
+    grid-auto-rows: 100px;
+    margin: 3rem 10rem;
+}
+
+.item {
+    background: #eee;
+}
+
+.item3, .item4 {
+    grid-row: span 2;
+}
+
+.item2 {
+    grid-row: span 4;
+}
+.item1 {
+    grid-row: span 3;
+}
+.item6 {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+.item5 {
+    grid-row: span 4;
+}
+/* .item:last-child {
+    flex-grow: 10;
+} */
+
+img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.header {
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.header h4 {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+/* @media (max-aspect-ratio: 1/1) {
+    .item {
+        height: 30vh;
+    }
+}
+
+@media (max-height: 480px) {
+    .item {
+        height: 80vh;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    .work-gallery {
+        flex-direction: row;
+    }
+    .item {
+        height: auto;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        max-height: 75vh;
+        min-width: 0;
+    }
+} */
