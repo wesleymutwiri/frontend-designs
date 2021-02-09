@@ -600,11 +600,12 @@ label {
     justify-content: space-between;
 }
 
-.social-media > * {
+.social-media>* {
     margin: 0px 10px;
 }
 
-.facebook, .linked-in {
+.facebook,
+.linked-in {
     background: #020e35;
     width: 35px;
     height: 35px;
@@ -657,7 +658,7 @@ label {
     transform: scaleX(-1);
 }
 
-.footer-column  {
+.footer-column {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -698,12 +699,15 @@ label {
     .newsletters {
         padding: 3rem;
     }
+
     .newsletter-image {
         width: 45%;
     }
+
     .work-gallery {
         margin: 1rem;
     }
+
     .header-image {
         width: 100%;
     }
@@ -713,73 +717,161 @@ label {
     .customers-column {
         padding: 1rem;
     }
+
     header {
         flex-direction: column-reverse;
         margin-top: 3rem;
         padding: 10px;
     }
+
     .header-text br {
         display: none;
     }
+
     .talented-people {
         flex-direction: column;
         max-height: none;
         margin: 1rem 0;
     }
+
     .talented-image {
         width: 100%;
     }
+
     .talented-text {
         width: 100%;
         max-width: none;
         padding: 1.5rem;
     }
+
     .buttons {
         margin: 2rem 0;
     }
+
     .things-we-enjoy {
         margin-bottom: 5rem;
     }
+
     .light-background .lower-border-red {
         width: max-content;
     }
+
     .row {
         /* flex-direction: column; */
         padding: 1rem;
     }
-    .customers .row{
+
+    .customers .row {
         flex-direction: column-reverse;
     }
-    .customer-image, .customers-column, .header-text, .message-img, .message-form, .newsletter-image{
+
+    .customer-image,
+    .customers-column,
+    .header-text,
+    .message-img,
+    .message-form,
+    .newsletter-image {
         width: 100%;
         max-width: unset;
     }
+
     .row.users {
         flex-wrap: wrap;
     }
+
     .work-gallery {
-        grid-auto-flow: dense;     /* KEY RULE; deactive to see what happens without it; defaults to "sparse" (consecutive ordering) value */
+        grid-auto-flow: dense;
+        /* KEY RULE; deactive to see what happens without it; defaults to "sparse" (consecutive ordering) value */
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
+        margin: 1rem 0;
     }
-    .item1, .item2, .item3, .item4, .item5, .item6 {
+
+    .item1,
+    .item2,
+    .item3,
+    .item4,
+    .item5,
+    .item6 {
         grid-row: auto;
         grid-column: auto;
     }
-    .message-us{
+
+    .message-us {
         flex-direction: column;
     }
+
     .newsletters {
         flex-direction: column;
         margin-top: 1rem;
     }
+
     .footer-container {
         flex-direction: column;
+        padding: 2rem;
     }
-    .footer-container::before, .light-background::before {
+
+    .footer-container::before,
+    .light-background::before {
         display: none;
     }
+
     .footer-container::after {
         display: none;
+    }
+
+    .navbar-items {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .navbar-items .button-wide {
+        display: none;
+    }
+    .users {
+        margin-bottom: 3rem;
+    }
+    .user-card {
+        margin-bottom: 3rem;
+    }
+    .bottom-footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; 
+        padding: 1.5rem;
+    }
+    .policies {
+        flex-direction: column;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .things-we-enjoy .row {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .lower-border-red {
+        font-size: 1.5rem;
+    }
+
+    .lower-border-red::after {
+        height: 15px;
+    }
+    .users-header {
+        width: 100%;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .users-header .lower-border-red::after {
+        width: 55%;
+        transform: translateX(40%);
+    }
+    .container {
+        overflow-x: hidden;
     }
 }
