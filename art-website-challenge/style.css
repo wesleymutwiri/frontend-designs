@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900 &family=Source+Sans+Pro&display=swap');
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,12 +15,20 @@ body {
     color: #020e35;
     overflow-x: hidden;
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Merriweather', serif;
 }
+
 button {
     cursor: pointer;
 }
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -37,7 +47,7 @@ nav {
     z-index: 1;
 }
 
-.navbar-logo img{
+.navbar-logo img {
     height: 50px;
     width: 50px;
 }
@@ -120,10 +130,11 @@ img {
     word-break: keep-all;
 }
 
-.lower-border-red{
+.lower-border-red {
     font-size: 3rem;
     position: relative;
 }
+
 .lower-border-red::after {
     content: "";
     background: #ff5678;
@@ -161,6 +172,7 @@ img {
     font-family: 'Merriweather', serif;
     font-weight: 700;
 }
+
 .container {
     max-width: 1980px;
     margin: auto;
@@ -175,6 +187,7 @@ img {
     display: flex;
     justify-content: space-evenly;
 }
+
 .col {
     display: flex;
     flex-direction: column;
@@ -183,6 +196,7 @@ img {
 .light-background {
     position: relative;
 }
+
 .light-background::before {
     background: url('https://opendoodles.s3-us-west-1.amazonaws.com/clumsy.svg');
     background-size: cover;
@@ -198,8 +212,8 @@ img {
 .grid-enjoy {
     display: grid;
     grid-template-areas: "number name name"
-                        "number name name"
-                        "number description description";
+        "number name name"
+        "number description description";
     margin: 20px 0px;
 }
 
@@ -211,9 +225,9 @@ img {
     padding-right: 16px;
     font-family: 'Merriweather', serif;
     text-shadow: -1px 1px 2px rgb(119, 119, 119),
-				  1px 1px 2px rgb(119, 119, 119),
-				  1px -1px 0 rgb(119, 119, 119),
-				  -1px -1px 0 rgb(119, 119, 119);
+        1px 1px 2px rgb(119, 119, 119),
+        1px -1px 0 rgb(119, 119, 119),
+        -1px -1px 0 rgb(119, 119, 119);
 }
 
 .things-we-enjoy .row {
@@ -225,6 +239,7 @@ img {
     padding: 15px 0px;
     font-weight: 900;
 }
+
 .enjoy-description {
     grid-area: description;
     font-weight: 300;
@@ -239,6 +254,7 @@ img {
     justify-content: space-around;
     margin-bottom: 10rem;
 }
+
 h2 {
     font-size: 3rem;
 }
@@ -303,12 +319,13 @@ h2 {
     font-size: 0.8rem;
 }
 
-.user-card:hover{
+.user-card:hover {
     box-shadow: 6px 10px 15px 5px #020e3559;
     cursor: pointer;
     background: #eee;
 }
-.user-card:hover > .user-details {
+
+.user-card:hover>.user-details {
     display: unset;
 }
 
@@ -325,7 +342,8 @@ h2 {
 .user-work {
     color: #494949;
 }
-.user-button button{
+
+.user-button button {
     margin: 0 auto;
     display: block;
 }
@@ -338,7 +356,7 @@ h2 {
     text-align: center;
 }
 
-.previous-work h2{
+.previous-work h2 {
     text-align: center;
 }
 
@@ -370,23 +388,28 @@ h2 {
     background: #eee;
 }
 
-.item3, .item4 {
+.item3,
+.item4 {
     grid-row: span 2;
 }
 
 .item2 {
     grid-row: span 4;
 }
+
 .item1 {
     grid-row: span 3;
 }
+
 .item6 {
     grid-row: span 3;
     grid-column: span 2;
 }
+
 .item5 {
     grid-row: span 4;
 }
+
 /* .item:last-child {
     flex-grow: 10;
 } */
@@ -456,7 +479,7 @@ img {
     scroll-snap-align: center;
     -webkit-animation: scroll 20s linear infinite;
     animation: scroll 20s linear infinite;
-    width: calc(300px * 7);
+    width: calc(300px * 8);
     scrollbar-color: transparent transparent;
     scrollbar-width: none;
     scroll-behavior: smooth;
@@ -464,24 +487,25 @@ img {
 }
 
 *::-webkit-scrollbar {
-  width: 0;
-  display: none;
+    width: 0;
+    display: none;
 }
 
 *::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
+    background: transparent;
+    border: none;
 }
 
 * {
-  -ms-overflow-style: none;
+    -ms-overflow-style: none;
 }
 
-.carousel-testimonial::before, .carousel-testimonial::after {
+.carousel-testimonial::before,
+.carousel-testimonial::after {
     content: "";
     position: absolute;
     width: 300px;
@@ -498,8 +522,9 @@ img {
     0% {
         transform: translateX(0);
     }
+
     100% {
-        transform: translateX(calc(-300px * 2));
+        transform: translateX(calc(-300px * 3));
     }
 }
 
@@ -522,8 +547,9 @@ img {
     flex-direction: column;
 }
 
-input, textarea {
-    padding: 1rem;
+input,
+textarea {
+    padding: 1.5rem;
     background: #ffeef6;
     border-radius: 6px;
     border: 2px solid #020e35;
@@ -547,6 +573,121 @@ label {
 
 .message-head {
     margin-bottom: 2.5rem;
+}
+
+.button {
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.newsletters {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10rem;
+}
+
+.newsletter-form h2 {
+    margin-bottom: 4rem;
+}
+
+.newsletter-form .button {
+    margin-top: 4rem;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-media > * {
+    margin: 0px 10px;
+}
+
+.facebook, .linked-in {
+    background: #020e35;
+    width: 35px;
+    height: 35px;
+    z-index: -1;
+    color: #fff;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.img {
+    margin: 1rem 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    min-height: 500px;
+    position: relative;
+    align-items: baseline;
+    padding: 5rem 0;
+}
+
+.footer-container::before {
+    background: url('https://opendoodles.s3-us-west-1.amazonaws.com/strolling.svg');
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100px;
+    bottom: 0;
+    right: 0;
+    opacity: .1;
+    width: 700px;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.footer-container::after {
+    background: url('https://opendoodles.s3-us-west-1.amazonaws.com/roller-skating.svg');
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -100px;
+    opacity: .1;
+    width: 700px;
+    background-repeat: no-repeat;
+    height: 100%;
+    transform: scaleX(-1);
+}
+
+.footer-column  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-column h4 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.bottom-footer {
+    background: #020e35;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+
+}
+
+.policies {
+    display: flex;
+    justify-content: space-between;
+}
+
+.policies p {
+    padding: 0 4rem;
+    cursor: pointer;
 }
 
 /* @media (max-aspect-ratio: 1/1) {
