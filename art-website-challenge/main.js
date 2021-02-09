@@ -1,9 +1,9 @@
-window.onscroll = function() { 
-    scrollFunction(); 
-}
+// window.onscroll = function() { 
+//     scrollFunction(); 
+// }
 
-let nav = document.getElementById("navbar");
+// let nav = document.getElementById("navbar");
 
-function scrollFunction() {
-    nav.classList.toggle("on-scroll", nav.scrollTop > 50 || document.documentElement.scrollTop > 50);
-}
+// function scrollFunction() {
+//     nav.classList.toggle("on-scroll", nav.scrollTop > 50 || document.documentElement.scrollTop > 50);
+// }
