@@ -5,18 +5,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: Avenir-Book;
   src: url("/assets/font/AvenirLTStd-Medium.woff");
 }
+
 @font-face {
   font-family: Avenir-Black;
   src: url("/assets/font/AvenirLTStd-Black.woff");
 }
+
 @font-face {
   font-family: Avenir-Roman;
   src: url("/assets/font/AvenirLTStd-Roman.woff");
 }
+
 body {
   font-family: Avenir-Book;
   color: #2b2b2b;
@@ -45,7 +49,7 @@ button:hover {
 
 .button-secondary {
   background: #fff;
-  
+
 }
 
 .button-tertiary {
@@ -55,7 +59,6 @@ button:hover {
 
 .text-secondary {
   color: #787878;
-  font-family: Avenir-Book;
 }
 
 .iconed {
@@ -65,7 +68,7 @@ button:hover {
   padding: 12px 50px;
 }
 
-.iconed svg{
+.iconed svg {
   margin-left: 16px;
 }
 
@@ -98,7 +101,7 @@ a {
   padding: 20px;
 }
 
-.mobile-number svg{
+.mobile-number svg {
   margin: 0 10px;
 }
 
@@ -112,6 +115,7 @@ header {
   width: 100%;
   padding: 5rem;
 }
+
 .menu-items a {
   padding: 0px 10px;
 }
@@ -149,6 +153,7 @@ img {
   padding: 1rem 2rem;
   max-width: 300px;
 }
+
 .item svg {
   margin-right: 0.5rem;
   height: 100%;
@@ -158,6 +163,7 @@ img {
 .text-center {
   text-align: center;
 }
+
 .icon {
   height: 50px;
   width: 50px;
@@ -167,4 +173,143 @@ img {
 .choice {
   max-width: 200px;
   text-align: center;
+}
+
+.button-cart {
+  background: #fec429;
+  border-radius: 12px;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  max-width: 300px;
+  border: 1px solid #2b2b2b;
+  border-radius: 30px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.card:hover {
+  background: #fec429;
+  box-shadow: 1px 2px 10px #2b2b2b;
+  border: none;
+}
+
+.card:hover .button-cart {
+  background: #fff;
+}
+
+.card-image {
+  position: relative;
+}
+
+.love-heart {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.love-heart:hover svg{
+  fill: red;
+  cursor: pointer;
+}
+
+.text-red {
+  color: red;
+  font-family: Avenir-Black;
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.food-cards {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.price-number {
+  font-size: 1.5rem;
+}
+
+.special-offer-banner {
+  border: 1px solid #fec429;
+  width: 800px;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 1px 1px 1px #787878;
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  position: absolute;
+  top: -125px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 250px;
+  background:#fff;
+}
+
+.banner-text {
+  max-width: 350px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.subscribe {
+  margin: 1rem;
+}
+
+input[type=email] {
+  border: none;
+  outline: none;
+  padding-left: 1.5rem;
+}
+
+.input-container {
+  box-shadow: 1px 1px 4px #2b2b2b;
+  width: max-content;
+  margin: 0 auto;
+  outline: none;
+  border-radius: 30px;
+  padding: 0.2rem;
+}
+.subscribe-button {
+  background: #fec429;
+  padding: 0.8rem 20px;
+  margin-right: 0.1rem;
+  font-family: Avenir-Book;
+}
+
+.footer-items {
+  position: relative;
+  margin-top: 10rem;
+}
+
+.alignment-baseline {
+  align-items: flex-start;
+  background: #fec429;
+  padding: 10rem;
+  padding-top: 15rem;
+}
+
+.social-media-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-media {
+  margin: 0 0.3rem;
+}
+
+.logo-white {
+    color: #fff;
+    position: relative;
+    border-bottom: 1px solid #fff;
+    border-radius: 50%;
 }
