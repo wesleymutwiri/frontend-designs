@@ -1,5 +1,170 @@
-*, *::after, *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Avenir-Book;
+  src: url("/assets/font/AvenirLTStd-Medium.woff");
+}
+@font-face {
+  font-family: Avenir-Black;
+  src: url("/assets/font/AvenirLTStd-Black.woff");
+}
+@font-face {
+  font-family: Avenir-Roman;
+  src: url("/assets/font/AvenirLTStd-Roman.woff");
+}
+body {
+  font-family: Avenir-Book;
+  color: #2b2b2b;
+  width: 100%;
+  height: 100%;
+  line-height: 1.5;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  font-family: Avenir-Black;
+  border-radius: 30px;
+  width: max-content;
+}
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 1px 3px 7px #2b2b2b;
+}
+
+.button-primary {
+  background: #fec429;
+}
+
+.button-secondary {
+  background: #fff;
+  
+}
+
+.button-tertiary {
+  background: none;
+  border: 1px solid #2b2b2b;
+}
+
+.text-secondary {
+  color: #787878;
+  font-family: Avenir-Book;
+}
+
+.iconed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 50px;
+}
+
+.iconed svg{
+  margin-left: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Avenir-Black;
+}
+
+a {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+
+.logo-yellow {
+  color: #fec429;
+  position: relative;
+  border-bottom: 1px solid #fec429;
+  border-radius: 50%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Avenir-Black;
+  padding: 20px;
+}
+
+.mobile-number svg{
+  margin: 0 10px;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  padding: 5rem;
+}
+.menu-items a {
+  padding: 0px 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.image {
+  width: max-content;
+  height: max-content;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.items {
+  width: 60%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 300px;
+}
+.item svg {
+  margin-right: 0.5rem;
+  height: 100%;
+  width: 50px;
+}
+
+.text-center {
+  text-align: center;
+}
+.icon {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.choice {
+  max-width: 200px;
+  text-align: center;
 }
