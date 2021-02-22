@@ -29,6 +29,10 @@ body {
   line-height: 1.5;
 }
 
+.text-black {
+  font-family: Avenir-Black;
+}
+
 button {
   outline: none;
   border: none;
@@ -79,6 +83,7 @@ h4,
 h5,
 h6 {
   font-family: Avenir-Black;
+  font-size: 1.2rem;
 }
 
 a {
@@ -89,7 +94,7 @@ a {
 .logo-yellow {
   color: #fec429;
   position: relative;
-  border-bottom: 1px solid #fec429;
+  border-bottom: 3px solid #fec429;
   border-radius: 50%;
 }
 
@@ -125,6 +130,7 @@ header {
   flex-direction: column;
   justify-content: space-around;
   width: 50%;
+  padding: 3rem;
 }
 
 .image {
@@ -251,7 +257,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 250px;
+  height: 280px;
   background:#fff;
 }
 
@@ -263,6 +269,7 @@ img {
 
 .subscribe {
   margin: 1rem;
+  padding-bottom: 3rem;
 }
 
 input[type=email] {
@@ -310,6 +317,37 @@ input[type=email] {
 .logo-white {
     color: #fff;
     position: relative;
-    border-bottom: 1px solid #fff;
+    border-bottom: 3px solid #fff;
     border-radius: 50%;
+}
+
+.large-text {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.text {
+  padding: 4rem 8rem;
+}
+
+.text h2 {
+  padding: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.details {
+  padding-bottom: 2rem;
+  max-width: 350px;
+}
+
+.choose-us, .menu {
+  margin: 8rem;
+}
+
+.buttoned {
+  margin: 4rem;
 }
