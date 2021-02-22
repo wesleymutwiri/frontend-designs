@@ -161,24 +161,7 @@
 .carousel__indicator {
   background-color: #787878;
 }
-.carousel__slide:nth-of-type(1),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(1) {
-  background-image: url("https://unsplash.it/300?random");
-  background-size: cover;
-  background-position: center;
-}
-.carousel__slide:nth-of-type(2),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(2) {
-  background-image: url("https://unsplash.it/600?random");
-  background-size: cover;
-  background-position: center;
-}
-.carousel__slide:nth-of-type(3),
-.carousel--thumb .carousel__indicators .carousel__indicator:nth-of-type(3) {
-  background-image: url("https://unsplash.it/900?random");
-  background-size: cover;
-  background-position: center;
-}
+
 .carousel--thumb .carousel__indicator {
   height: 30px;
   width: 30px;
