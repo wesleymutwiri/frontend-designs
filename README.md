@@ -1,0 +1,22 @@
+# Frontend Designs
+
+This is a simple collection of different designs found on the internet recreated using only HTML and CSS with no frameworks, libraries or Javscript used.
+
+The repo will continuously be updated so come back later for newer designs.
+
+PS:
+- The designs can be reused as you please. Since it is all HTML and CSS it can be used with any framework without much work.
+- Also mobile responsiveness to be worked on slowly as most designs come without the mobile version.
+- Tutorials on how to recreate the sites from scratch to come soon on my [blog site](https://wesleyblog.netlify.app/)
+  - Yes yes I know I'm a shameless plug. Sue me
+
+## Reason
+
+Honestly, no particular reason for doing the designs without use of Javascript other than getting to learn CSS better and create better designed sites.
+
+## Link to Sites
+1. [Art Website Challenge live site](https://frontend-designs-1.netlify.app)
+    - [Design Being implemented](https://www.behance.net/gallery/110271195/Art-Agency-Website)
+  
+2. [Food Delivery Landing Page Challenge live site](https://quirky-jackson-27849b.netlify.app)
+    - [Design being Implemented](https://www.behance.net/gallery/107808949/Food-Delivery-Landing-page)
