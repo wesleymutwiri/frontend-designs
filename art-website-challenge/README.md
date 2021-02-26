@@ -16,3 +16,6 @@ SVG Icons From [Feather Icons](https://feathericons.com)
 Illustrations from: 
 - [Absurd design](https://absurd.design)
 - [Open doodles](https://opendoodles.com)
+
+## Font 
+Merriweather and Source Sans Pro
