@@ -16,3 +16,6 @@ Photo credit: <a href="https://visualhunt.co/a6/ead8dca3">verchmarco</a> on <a h
 Other SVG Icons From [Feather Icons](https://feathericons.com)
 
 Font family from [cufonfonts](https://www.cufonfonts.com/font/avenir-lt-std)
+
+## Font
+Avenir Book, Avenir Roman and Avenir Black
