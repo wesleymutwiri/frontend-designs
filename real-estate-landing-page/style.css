@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;900&display=swap");
+:root {
+  --brand-color: #00a8ab;
+  --title-color: #4d797a;
+  --paragraph-color: #a7a5a6;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--paragraph-color);
+	height: 100%;
+	width: 100%;
+	font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--title-color);
+}
+
+button {
+	outline: none;
+	border: none;
+	padding: 0.8rem 2rem;
+	font-weight: 700;
+	width: max-content;
+	cursor: pointer;
+}
+
+.button-primary {
+	background: var(--brand-color);
+	color: #fff;
+}
+
+.button-secondary {
+	background: #fff;
+	color: var(--brand-color);
+}
+
+.large-button {
+	padding: 2rem 3rem;
+}
+
+.color-green {
+  color: var(--brand-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--title-color);
+  font-weight: 500;
+}
+
+.logo {
+  font-weight: 900;
+	display: flex;
+}
+
+.undark-text {
+	font-weight: 500;
+}
+
+.dark-text {
+	font-weight: 700;
+}
+
+.logo-icon {
+	height: 24px;
+	width: 20px;
+	margin-right: 0.5rem;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	padding: 3rem 6rem; 
+	align-items: center;
+}
+
+.navbar-main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 50%;
+}
+
+.nav-link {
+	padding: 0 2rem;
+	font-weight: 700;
+}
+
+img {
+	aspect-ratio: 1/1;
+	width: 100%;
+	height: 100%;
+	object-fit: 100%;
+}
+header {
+	display: flex;
+	height: 70vh;
+}
+
+.container {
+	position: relative;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	justify-content: center;
+	padding: 0 6rem;
+	padding-right: 1rem;
+}
+
+.image {
+	width: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	height: 75vh;
+}
+
+.large-text {
+	font-size: 3.5rem;
+	margin-bottom: 3rem;
+}
+
+.small-text {
+	font-weight: 500;
+	margin-bottom: 2rem;
+}
+
+.search-box {
+	display: flex;
+	padding: 1rem 3rem;
+}
+
+select {
+	background: none;
+	outline: none;
+	border: 1px solid var(--paragraph-color);
+	padding: 0.8rem 2rem;
+}
+
+.custom-select {
+	margin: 0 2rem;
+}
