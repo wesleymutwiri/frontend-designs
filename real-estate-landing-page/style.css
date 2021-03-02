@@ -1,25 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800;900&display=swap");
 
 :root {
-	--brand-color: #00a8ab;
-	--title-color: #4d797a;
-	--paragraph-color: #a7a5a6;
+  --brand-color: #00a8ab;
+  --title-color: #4d797a;
+  --paragraph-color: #a7a5a6;
 }
 
 *,
 *::before,
 *::after {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: "Montserrat", sans-serif;
-	color: var(--paragraph-color);
-	height: 100%;
-	width: 100%;
-	font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: var(--paragraph-color);
+  height: 100%;
+  width: 100%;
+  font-weight: 500;
 }
 
 h1,
@@ -28,189 +28,270 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--title-color);
+  color: var(--title-color);
 }
 
 button {
-	outline: none;
-	border: none;
-	padding: 0.8rem 2rem;
-	font-weight: 700;
-	width: max-content;
-	cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-weight: 700;
+  width: max-content;
+  cursor: pointer;
 }
 
 .button-primary {
-	background: var(--brand-color);
-	color: #fff;
+  background: var(--brand-color);
+  color: #fff;
 }
 
 .button-secondary {
-	background: #fff;
-	color: var(--brand-color);
+  background: #fff;
+  color: var(--brand-color);
 }
 
 .large-button {
-	padding: 2rem 3rem;
+  padding: 2rem 3rem;
 }
 
 .color-green {
-	color: var(--brand-color);
+  color: var(--brand-color);
 }
 
 a {
-	text-decoration: none;
-	color: var(--title-color);
-	font-weight: 500;
+  text-decoration: none;
+  color: var(--title-color);
+  font-weight: 500;
 }
 
 .logo {
-	font-weight: 900;
-	display: flex;
+  font-weight: 900;
+  display: flex;
 }
 
 .undark-text {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 .dark-text {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 .logo-icon {
-	height: 24px;
-	width: 20px;
-	margin-right: 0.5rem;
+  height: 24px;
+  width: 20px;
+  margin-right: 0.5rem;
 }
 
 .navbar {
-	display: flex;
-	justify-content: space-between;
-	padding: 3rem 6rem;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 6rem;
+  align-items: center;
 }
 
 .navbar-main {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
 }
 
 .nav-link {
-	padding: 0 2rem;
-	font-weight: 700;
+  padding: 0 2rem;
+  font-weight: 700;
 }
 
 img {
-	aspect-ratio: 1/1;
-	width: 100%;
-	height: 100%;
-	object-fit: 100%;
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
+  object-fit: 100%;
 }
 
 header {
-	display: flex;
-	height: 70vh;
+  display: flex;
+  height: 70vh;
 }
 
 .container {
-	position: relative;
+  position: relative;
 }
 
 .column {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
-	justify-content: center;
-	padding: 0 6rem;
-	padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  padding: 0 6rem;
+  padding-right: 1rem;
 }
 
 .image {
-	width: 50%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: -1;
-	height: 75vh;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  height: 75vh;
 }
 
 .large-text {
-	font-size: 3.5rem;
-	margin-bottom: 3rem;
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
 }
 
 .small-text {
-	font-weight: 500;
-	margin-bottom: 2rem;
-	padding-right: 7rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  padding-right: 7rem;
 }
 
 .search-box {
-	display: flex;
-	padding: 1rem 3rem;
-	position: absolute;
-	right: 0;
-	left: 0;
-	top: 68vh;
-	width: 800px;
-	background-color: white;
-	margin: 0 auto;
-	box-shadow: 4px 4px 5px #a7a5a6;
-	justify-content: space-around;
-	height: 130px;
-	align-items: center;
+  display: flex;
+  padding: 1rem 3rem;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 68vh;
+  width: 800px;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 4px 4px 5px #a7a5a6;
+  justify-content: space-around;
+  height: 130px;
+  align-items: center;
 }
 
 select {
-	background: none;
-	outline: none;
-	border: 1px solid var(--paragraph-color);
-	padding: 0.8rem 2rem;
+  background: transparent;
+  outline: none;
+  border: 1px solid var(--paragraph-color);
+  padding: 1rem 2rem;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 .custom-select {
-	margin: 0 2rem;
+  margin: 0 2rem;
 }
 
 .text-center {
-	text-align: center;
-	font-size: 3rem;
-	padding: 3rem;
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 3rem;
 }
 
 .card-icon {
-	width: 50px;
-	height: 50px;
-	margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
 }
 
-.service {
-	margin-bottom: 3rem;
+.services {
+  margin-bottom: 6rem;
 }
 
 .service-cards {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 2rem;
-	width: 400px;
-	height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  width: 400px;
+  height: 400px;
+  background: white;
+  margin: 0 1rem;
+  border-radius: 14px;
+}
+
+.card:hover {
+  box-shadow: 1px 4px 15px 4px #a7a5a6;
+  cursor: pointer;
 }
 
 .card-header {
-	font-size: 1.5rem;
-	padding: 2rem;
-	text-align: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  text-align: center;
 }
 
 .card-description {
-	font-size: 1rem;
-	text-align: center;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.country-cards {
+  display: flex;
+  max-width: 1800px;
+  justify-content: space-between;
+}
+
+.image-card {
+  width: 300px;
+  height: max-content;
+  margin-right: 2rem;
+  border: 1px solid #a7a5a6;
+}
+
+.image-card:hover {
+  box-shadow: 1px 4px 15px 4px #a7a5a6;
+	border: none;
+	cursor: pointer;
+}
+
+.image-card:hover > .country-name {
+	color: var(--brand-color);
+	font-weight: 700;
+}
+
+.country {
+  padding: 0 6rem;
+  max-width: 1800px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.column-country {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.country h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.country-name {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.link {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 2rem;
+}
+
+.link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.link-icon svg {
+  margin-right: -4rem;
+  margin-left: 1rem;
+}
+
+.property-country {
+  max-width: 500px;
 }
