@@ -3,7 +3,7 @@
 Simple header only site that is a trial at replicating a design from dribble that has only the header. As usual, no Javascript, external libraries or frameworks were used.
 
 ## Link to live site
-(Coming soon)
+[Dribble Jobs Finder Header Site](https://frontend-designs-3.netlify.app)
 
 ## Link to Design
 [Dribble Jobs Finder](https://dribbble.com/shots/15166906-Jobs-Finder)
