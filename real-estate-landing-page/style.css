@@ -31,6 +31,10 @@ h6 {
   color: var(--title-color);
 }
 
+h2 {
+  font-size: 2.8rem;
+}
+
 button {
   outline: none;
   border: none;
@@ -242,13 +246,13 @@ select::-ms-expand {
 
 .image-card:hover {
   box-shadow: 1px 4px 15px 4px #a7a5a6;
-	border: none;
-	cursor: pointer;
+  border: none;
+  cursor: pointer;
 }
 
-.image-card:hover > .country-name {
-	color: var(--brand-color);
-	font-weight: 700;
+.image-card:hover>.country-name {
+  color: var(--brand-color);
+  font-weight: 700;
 }
 
 .country {
@@ -294,4 +298,53 @@ select::-ms-expand {
 
 .property-country {
   max-width: 500px;
+}
+
+.small-icon {
+  display: flex;
+}
+
+.small-icon img {
+  margin-right: 0.5rem;
+}
+
+.small-icon img {
+  width: 15px;
+  height: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.new-deal-cards {
+  display: flex;
+  max-width: 1800px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  justify-content: space-around;
+}
+
+.new-deal {
+  width: 400px;
+  margin: 0 2rem;
+  height: max-content;
+  font-size: 1.3rem;
+}
+
+.new-deal:hover {
+  box-shadow: 1px 4px 15px #a7a5a6;
+  cursor: pointer;
+}
+
+.new-deals {
+  padding: 0 6rem;
+  
+}
+
+.new-deal-footer {
+  padding: 1rem;
+  background: #fff;
 }

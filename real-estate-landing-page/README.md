@@ -5,6 +5,8 @@ Simple real estate landing page trial got from Behance.
 ## Design Link
 [Link to the original behance design](https://www.behance.net/gallery/109518715/Real-Estate-Landing-Page)
 
+## Live Site Link
+[Link to Live site of the real estate Landing page](https://frontend-designs-4.netlify.app/)
 ## Credits
 ### Image Credits 
 
