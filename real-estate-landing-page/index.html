@@ -1,231 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SafeHome</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SafeHome</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <div class="container">
-    <nav>
-      <div class="navbar">
-        <div class="navbar-main">
-          <div class="logo">
-            <img src="/assets/img/icons/home.svg" alt="" class="logo-icon" />
-            <h1 class="undark-text">
-              Safe<span class="color-green dark-text">Home</span>
-            </h1>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="navbar">
+          <div class="navbar-main">
+            <div class="logo">
+              <img src="/assets/img/icons/home.svg" alt="" class="logo-icon" />
+              <h1 class="undark-text">
+                Safe<span class="color-green dark-text">Home</span>
+              </h1>
+            </div>
+            <div class="links">
+              <a href="#" class="nav-link">Home</a>
+              <a href="#" class="nav-link">Our Property</a>
+              <a href="#" class="nav-link">Contact</a>
+            </div>
           </div>
-          <div class="links">
-            <a href="#" class="nav-link">Home</a>
-            <a href="#" class="nav-link">Our Property</a>
-            <a href="#" class="nav-link">Contact</a>
+          <div class="navbar-extra">
+            <button class="button-secondary">Log in</button>
           </div>
         </div>
-        <div class="navbar-extra">
-          <button class="button-secondary">Log in</button>
-        </div>
-      </div>
-    </nav>
-    <header>
-      <div class="column">
-        <h1 class="large-text">Safe Home for your Next Generation</h1>
-        <p class="small-text">
-          There are many variations of passages of Lrem Ipsum available but
-          the majority have suffered alteration in some form
-        </p>
-        <button class="large-button button-primary">Create Account</button>
-      </div>
-      <div class="image">
-        <img src="/assets/img/pexels-jeffrey-czum-2501965.jpg" alt="" />
-      </div>
-    </header>
-    <div class="search-box">
-      <div class="custom-select">
-        <select name="Location" id="location">
-          <option value="Nairobi">Nairobi</option>
-          <option value="Nairobi">Nairobi</option>
-          <option value="Nairobi">Nairobi</option>
-        </select>
-      </div>
-      <div class="custom-select">
-        <select name="PropertyType" id="propertyType">
-          <option value="Loan">Loan</option>
-          <option value="Rent">Rent</option>
-          <option value="Mortgage">Mortgage</option>
-        </select>
-      </div>
-      <div class="search-button">
-        <button class="icon">
-          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"
-            stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </button>
-      </div>
-    </div>
-    <div class="services">
-      <h2 class="text-center">Our Best Services</h2>
-      <div class="service-cards">
-        <div class="card">
-          <div class="card-icon">
-            <img src="/assets/img/icons/bank(1).svg" class="icon" alt="" />
-          </div>
-          <h4 class="card-header">Insurance</h4>
-          <p class="card-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem
-            ipsum lorem ipsum
+      </nav>
+      <header>
+        <div class="column">
+          <h1 class="large-text">Safe Home for your Next Generation</h1>
+          <p class="small-text">
+            There are many variations of passages of Lrem Ipsum available but
+            the majority have suffered alteration in some form
           </p>
+          <button class="large-button button-primary">Create Account</button>
         </div>
-        <div class="card">
-          <div class="card-icon">
-            <img src="/assets/img/icons/money-bag.svg" class="icon" alt="" />
-          </div>
-          <h4 class="card-header">Low Price</h4>
-          <p class="card-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem
-            ipsum lorem ipsum
-          </p>
+        <div class="image">
+          <img src="/assets/img/pexels-jeffrey-czum-2501965.jpg" alt="" />
         </div>
-        <div class="card">
-          <div class="card-icon">
-            <img src="/assets/img/icons/house-price-symbol.svg" class="icon" alt="" />
-          </div>
-          <h4 class="card-header">24/7 Support</h4>
-          <p class="card-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem
-            ipsum lorem ipsum
-          </p>
+      </header>
+      <div class="search-box">
+        <div class="custom-select">
+          <select name="Location" id="location">
+            <option value="Nairobi">Nairobi</option>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Nairobi">Nairobi</option>
+          </select>
         </div>
-      </div>
-    </div>
-    <div class="country">
-      <div class="column-country">
-        <div class="property-country">
-          <h2>
-            Our Properties in <br />
-            Different Countries
-          </h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex error
-            blanditiis velit consequatur alias quo quae
-          </p>
+        <div class="custom-select">
+          <select name="PropertyType" id="propertyType">
+            <option value="Loan">Loan</option>
+            <option value="Rent">Rent</option>
+            <option value="Mortgage">Mortgage</option>
+          </select>
         </div>
-        <div class="link">
-          <a href="#" class="link-icon">
-            More Properties
-            <svg viewBox="0 0 24 24" width="150" height="24" stroke="currentColor" stroke-width="2" fill="none"
-              stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-              <line x1="-100" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
+        <div class="search-button">
+          <button class="icon">
+            <svg
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="css-i6dzq1"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
             </svg>
-          </a>
+          </button>
         </div>
       </div>
-      <div class="country-cards">
-        <div class="image-card">
-          <img src="/assets/img/pexels-jeffrey-czum-2501965.jpg" alt="" />
-          <div class="country-name">Srilanka</div>
-        </div>
-        <div class="image-card">
-          <img src="/assets/img/pexels-jeffrey-czum-2501965.jpg" alt="" />
-          <div class="country-name">Emarat</div>
-        </div>
-        <div class="image-card">
-          <img src="/assets/img/pexels-jeffrey-czum-2501965.jpg" alt="" />
-          <div class="country-name">India</div>
-        </div>
-        <div class="image-card">
-          <img src="/assets/img/pexels-jeffrey-czum-2501965.jpg" alt="" />
-          <div class="country-name">Canada</div>
-        </div>
-      </div>
-    </div>
-    <div class="new-deals">
-      <h2 class="text-center">Our New Deals</h2>
-      <div class="new-deal-cards">
-        <div class="new-deal">
-          <img src="/assets/img/pexels-jeffrey-czum-2501965.jpg" class="img" alt="">
-          <div class="new-deal-footer">
-            <div class="row">
-              <h4 class="deal-name">New Property</h4>
-              <div class="deal-price">$30.00</div>
+      <div class="services">
+        <h2 class="text-center">Our Best Services</h2>
+        <div class="service-cards">
+          <div class="card">
+            <div class="card-icon">
+              <img src="/assets/img/icons/bank(1).svg" class="icon" alt="" />
             </div>
-            <div class="row">
-              <div class="small-icon">
-                <img src="/assets/img/icons/bed.svg" alt="">
-                4
+            <h4 class="card-header">Insurance</h4>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem
+              ipsum lorem ipsum
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <img src="/assets/img/icons/money-bag.svg" class="icon" alt="" />
+            </div>
+            <h4 class="card-header">Low Price</h4>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem
+              ipsum lorem ipsum
+            </p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <img
+                src="/assets/img/icons/house-price-symbol.svg"
+                class="icon"
+                alt=""
+              />
+            </div>
+            <h4 class="card-header">24/7 Support</h4>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem
+              ipsum lorem ipsum
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="country">
+        <div class="column-country">
+          <div class="property-country">
+            <h2>
+              Our Properties in <br />
+              Different Countries
+            </h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex error
+              blanditiis velit consequatur alias quo quae
+            </p>
+          </div>
+          <div class="link">
+            <a href="#" class="link-icon">
+              More Properties
+              <svg
+                viewBox="0 0 24 24"
+                width="150"
+                height="24"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="css-i6dzq1"
+              >
+                <line x1="-100" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="country-cards">
+          <div class="image-card">
+            <img src="/assets/img/pexels-jeffrey-czum-2501965.jpg" alt="" />
+            <div class="country-name">Srilanka</div>
+          </div>
+          <div class="image-card">
+            <img src="/assets/img/pexels-jeffrey-czum-2501965.jpg" alt="" />
+            <div class="country-name">Emarat</div>
+          </div>
+          <div class="image-card">
+            <img src="/assets/img/pexels-jeffrey-czum-2501965.jpg" alt="" />
+            <div class="country-name">India</div>
+          </div>
+          <div class="image-card">
+            <img src="/assets/img/pexels-jeffrey-czum-2501965.jpg" alt="" />
+            <div class="country-name">Canada</div>
+          </div>
+        </div>
+      </div>
+      <div class="new-deals">
+        <h2 class="text-center">Our New Deals</h2>
+        <div class="new-deal-cards">
+          <div class="new-deal">
+            <img
+              src="/assets/img/pexels-jeffrey-czum-2501965.jpg"
+              class="img"
+              alt=""
+            />
+            <div class="new-deal-footer">
+              <div class="row">
+                <h4 class="deal-name">New Property</h4>
+                <div class="deal-price">$30.00</div>
               </div>
-              <div class="small-icon">
-                <img src="/assets/img/icons/bathtub.svg" alt="">3
+              <div class="row">
+                <div class="small-icon">
+                  <img src="/assets/img/icons/bed.svg" alt="" />
+                  4
+                </div>
+                <div class="small-icon">
+                  <img src="/assets/img/icons/bathtub.svg" alt="" />3
+                </div>
+                <div class="small-icon">
+                  <img src="/assets/img/icons/login.svg" alt="" />2500 sqft
+                </div>
               </div>
-              <div class="small-icon">
-                <img src="/assets/img/icons/login.svg" alt="">2500 sqft
+            </div>
+          </div>
+          <div class="new-deal">
+            <img
+              src="/assets/img/pexels-jeffrey-czum-2501965.jpg"
+              class="img"
+              alt=""
+            />
+            <div class="new-deal-footer">
+              <div class="row">
+                <h4 class="deal-name">New Property</h4>
+                <div class="deal-price">$30.00</div>
+              </div>
+              <div class="row">
+                <div class="small-icon">
+                  <img src="/assets/img/icons/bed.svg" alt="" />
+                  4
+                </div>
+                <div class="small-icon">
+                  <img src="/assets/img/icons/bathtub.svg" alt="" />3
+                </div>
+                <div class="small-icon">
+                  <img src="/assets/img/icons/login.svg" alt="" />2500 sqft
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="new-deal">
+            <img
+              src="/assets/img/pexels-jeffrey-czum-2501965.jpg"
+              class="img"
+              alt=""
+            />
+            <div class="new-deal-footer">
+              <div class="row">
+                <h4 class="deal-name">New Property</h4>
+                <div class="deal-price">$30.00</div>
+              </div>
+              <div class="row">
+                <div class="small-icon">
+                  <img src="/assets/img/icons/bed.svg" alt="" />
+                  4
+                </div>
+                <div class="small-icon">
+                  <img src="/assets/img/icons/bathtub.svg" alt="" />3
+                </div>
+                <div class="small-icon">
+                  <img src="/assets/img/icons/login.svg" alt="" />2500 sqft
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="new-deal">
-          <img src="/assets/img/pexels-jeffrey-czum-2501965.jpg" class="img" alt="">
-          <div class="new-deal-footer">
-            <div class="row">
-              <h4 class="deal-name">New Property</h4>
-              <div class="deal-price">$30.00</div>
+      </div>
+      <div class="achievement">
+        <div class="column">
+          <div class="achievements">
+            <div class="achievement-card project">
+              <img src="/assets/img/icons/start-up.svg" alt="" class="svg" />
+              <h4 class="text-center centered-small">Company Project</h4>
             </div>
-            <div class="row">
-              <div class="small-icon">
-                <img src="/assets/img/icons/bed.svg" alt="">
-                4
-              </div>
-              <div class="small-icon">
-                <img src="/assets/img/icons/bathtub.svg" alt="">3
-              </div>
-              <div class="small-icon">
-                <img src="/assets/img/icons/login.svg" alt="">2500 sqft
-              </div>
+            <div class="achievement-card clients">
+              <img
+                src="/assets/img/icons/technical-support.svg"
+                alt=""
+                class="svg"
+              />
+              <h4 class="text-center centered-small">Happy Clients</h4>
+            </div>
+            <div class="achievement-card award">
+              <img src="/assets/img/icons/trophy.svg" alt="" class="svg" />
+              <h4 class="text-center centered-small">Award win</h4>
+            </div>
+            <div class="achievement-card apartment">
+              <img src="/assets/img/icons/award.svg" alt="" class="svg" />
+              <h4 class="text-center centered-small">Apartment Sale</h4>
             </div>
           </div>
         </div>
-        <div class="new-deal">
-          <img src="/assets/img/pexels-jeffrey-czum-2501965.jpg" class="img" alt="">
-          <div class="new-deal-footer">
-            <div class="row">
-              <h4 class="deal-name">New Property</h4>
-              <div class="deal-price">$30.00</div>
-            </div>
-            <div class="row">
-              <div class="small-icon">
-                <img src="/assets/img/icons/bed.svg" alt="">
-                4
-              </div>
-              <div class="small-icon">
-                <img src="/assets/img/icons/bathtub.svg" alt="">3
-              </div>
-              <div class="small-icon">
-                <img src="/assets/img/icons/login.svg" alt="">2500 sqft
-              </div>
-            </div>
-          </div>
+        <div class="column">
+          <h2 class="achievement-header">Our Achievements</h2>
+          <p class="small-text">
+            I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give iu a complete
+            account of the system, and expound the actual teachings of the great
+            explorer of the truth, the master-builder of human happiness
+          </p>
+          <button class="button-primary explore">Explore</button>
         </div>
       </div>
-    </div>
-    <div class="achievement">
-      <div class="column">
-        <div class="achievement-card"></div>
-        <div class="achievement-card"></div>
-        <div class="achievement-card"></div>
-        <div class="achievement-card"></div>
-      </div>
-      <div class="column">
-        <h2>Our Achievement</h2>
-      </div>
-    </div>
-  </div>
-</body>
 
+      <div class="speech">
+        <h2 class="text-center">Speech From Our Clients</h2>
+        to be done later
+      </div>
+
+      <div class="contact-us">
+        <div class="centered-contact">
+          <h2 class="text-center">Contact us</h2>
+          <p>
+            I must explain to you how all this mistaken idea of denouncing
+            pleasure and praising pain was born and I will give you
+          </p>
+        </div>
+        <div class="contact-form">
+          <form action="">
+            <div class="row">
+              <input
+                type="text"
+                name="name"
+                id=""
+                class="name"
+                placeholder="Name"
+              />
+              <input
+                type="email"
+                name="email"
+                id=""
+                placeholder="Email"
+                class="email"
+              />
+            </div>
+            <div class="row">
+              <input
+                type="text"
+                name="message"
+                id=""
+                placeholder="Message"
+                class="message"
+              />
+            </div>
+            <div class="row">
+              <button class="button-primary button-send">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="row notification">
+        <h1 class="large-text text-white">
+          Do you want to be a Real Estate Agent?
+        </h1>
+        <button class="button-secondary register">Register now</button>
+      </div>
+
+      <div class="footer-links">
+        <div class="row">
+          <div class="link">
+            <h4>Useful Link</h4>
+            <a href="#" class="footer-link">Properties</a>
+            <a href="#" class="footer-link">Agents</a>
+            <a href="#" class="footer-link">News</a>
+          </div>
+          <div class="link">
+            <h4>About</h4>
+            <a href="#" class="footer-link">How it works</a>
+            <a href="#" class="footer-link">Why choose us</a>
+            <a href="#" class="footer-link">Contact</a>
+          </div>
+          <div class="link">
+            <h4>Terms</h4>
+            <a href="#" class="footer-link">Terms and Conditions</a>
+            <a href="#" class="footer-link">Security</a>
+            <a href="#" class="footer-link">Fees and Charge</a>
+          </div>
+          <div class="link">
+            [email-logo] wesley@gmail.com
+            [telephone-logo] +254 724 629 599
+            [white-facebook-logo] [white-twitter-logo] [white-linkedin-logo] [white-instagram-logo]
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="logo">
+          <img src="/assets/img/icons/home-white.svg" alt="" class="logo-icon" />
+          <h1>
+            SafeHome
+          </h1>
+        </div>
+        <div class="copyright">
+          &#169; 2021 Wesley Mochiemo, inc. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -149,6 +149,7 @@ header {
   font-weight: 500;
   margin-bottom: 2rem;
   padding-right: 7rem;
+  line-height: 1.5;
 }
 
 .search-box {
@@ -250,7 +251,7 @@ select::-ms-expand {
   cursor: pointer;
 }
 
-.image-card:hover>.country-name {
+.image-card:hover > .country-name {
   color: var(--brand-color);
   font-weight: 700;
 }
@@ -341,10 +342,148 @@ select::-ms-expand {
 
 .new-deals {
   padding: 0 6rem;
-  
 }
 
 .new-deal-footer {
   padding: 1rem;
   background: #fff;
+}
+
+.svg {
+  width: 50px;
+  height: 50px;
+}
+
+.achievement {
+  display: flex;
+}
+
+.achievements {
+  display: grid;
+  grid-template-areas:
+    "project project project . . ."
+    "project project project apartment apartment apartment"
+    "clients clients clients apartment apartment apartment"
+    "clients clients clients award award award"
+    ". . . award award award";
+  grid-template-columns: repeat(6, 70px);
+  gap: 3rem;
+  margin-bottom: 6rem;
+}
+
+.project {
+  grid-area: project;
+}
+
+.apartment {
+  grid-area: apartment;
+}
+
+.clients {
+  grid-area: clients;
+}
+
+.award {
+  grid-area: award;
+}
+
+.achievement-card {
+  border: 1px solid var(--paragraph-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem;
+  max-width: 350px;
+  height: max-content;
+}
+
+.achievement-header {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.achievement-card:hover {
+  background: var(--brand-color);
+  cursor: pointer;
+}
+
+.centered-small {
+  font-size: 1.5rem;
+}
+
+.achievement-card:hover > h4 {
+  color: #fff;
+}
+
+.achievement-card:hover > .svg {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg)
+    brightness(102%) contrast(102%);
+}
+
+.explore {
+  padding: 1.3rem 2rem;
+}
+
+.centered-contact {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+.contact-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--paragraph-color);
+  padding: 0.5rem 0;
+}
+
+input::placeholder {
+  color: var(--paragraph-color);
+  font-size: 1.2rem;
+}
+
+.name,
+.email {
+  width: 46%;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+  border-bottom: 2px solid var(--brand-color);
+}
+
+form {
+  margin-top: 3rem;
+}
+
+.message {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.button-send {
+  margin: 4rem auto;
+}
+
+footer {
+  background: var(--brand-color);
+  color: #fff;
+  font-weight: 700;
+  padding: 2rem 8rem;
+}
+
+.text-white {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.notification {
+  border-bottom: 2px solid #fff;
 }
