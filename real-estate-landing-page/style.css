@@ -71,6 +71,7 @@ a {
 .logo {
   font-weight: 900;
   display: flex;
+  align-items: center;
 }
 
 .undark-text {
@@ -159,7 +160,7 @@ header {
   right: 0;
   left: 0;
   top: 68vh;
-  width: 800px;
+  width: 1000px;
   background-color: white;
   margin: 0 auto;
   box-shadow: 4px 4px 5px #a7a5a6;
@@ -168,11 +169,28 @@ header {
   align-items: center;
 }
 
+.icon {
+  background: var(--brand-color);
+  color: #fff;
+  padding: 2rem;
+  height: max-content;
+}
+
 select {
-  background: transparent;
+  background-color: rgba(207, 207, 207, 0.445);
   outline: none;
-  border: 1px solid var(--paragraph-color);
-  padding: 1rem 2rem;
+  /* border: 1px solid var(--paragraph-color); */
+  padding: 2rem;
+  width: 300px;
+  box-shadow: inset 1px 1px 1px #a7a5a6;
+  border: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-image: url(/assets/img/icons/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: 1.2rem auto, 100%;
 }
 
 select::-ms-expand {
@@ -475,15 +493,89 @@ form {
 footer {
   background: var(--brand-color);
   color: #fff;
+}
+
+.footer-container {
+  padding: 2rem 10rem;
+  padding-top: 8rem;
+  margin: 0 auto;
+  max-width: 1600px;
   font-weight: 700;
-  padding: 2rem 8rem;
+}
+
+.register {
+  height: max-content;
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
 }
 
 .text-white {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2.9rem;
+  line-height: 1.5;
+  margin-bottom: 0;
 }
 
 .notification {
-  border-bottom: 2px solid #fff;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+}
+
+.footer-links {
+  border-top: 2px solid #fff;
+  padding: 6rem 0;
+}
+
+.link-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.link-footer h4 {
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.media-icon {
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+  justify-content: center;
+  margin-right: 10px;
+}
+.media-icon:hover {
+  background: #fff;
+  cursor: pointer;
+}
+
+.media-icon:hover > svg {
+  fill: var(--brand-color);
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.social svg {
+  margin-right: 10px;
+}
+
+.footer-link {
+  padding: 1rem;
+  padding-left: 0;
+  color: #fff;
+}
+
+.whited-text {
+  color: #fff;
+}
+
+.last-footer {
+  align-items: center;
 }
