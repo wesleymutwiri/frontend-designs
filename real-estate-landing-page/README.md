@@ -8,6 +8,10 @@ Simple real estate landing page trial got from Behance.
 ## Live Site Link
 [Link to Live site of the real estate Landing page](https://frontend-designs-4.netlify.app/)
 ## Credits
+
+## Icon Credits
+[Feather Icons](https://feathericons.com/)
+[Flaticon](https://www.flaticon.com/)
 ### Image Credits 
 
 [Photo by Jeffrey Czum from Pexels](https://www.pexels.com/photo/four-colourful-houses-2501965/)

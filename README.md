@@ -24,3 +24,5 @@ Honestly, no particular reason for doing the designs without use of Javascript o
 
 3. [Dribble Jobs Finder Header](https://frontend-designs-3.netlify.app)
   - [Design being Implemented](https://dribbble.com/shots/15166906-Jobs-Finder)
+4. [Real Estate Landing Page](https://frontend-designs-4.netlify.app)
+  - [Design Being Implemented](https://www.behance.net/gallery/109518715/Real-Estate-Landing-Page)
