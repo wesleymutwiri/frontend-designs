@@ -5,7 +5,6 @@
   position: relative;
   padding: 0;
   list-style: none;
-  padding: 2rem;
   height: 100%;
   margin: 0 auto;
 }
@@ -189,15 +188,15 @@
 
 .text {
   background: white;
-  padding: 2rem;
+  padding: 2rem 4rem;
   position: absolute;
   bottom: 20px;
-  left: 0px;
+  left: 40px;
   width: 600px;
   height: 450px;
   display: flex;
   align-items: center;
-  box-shadow: 10px 10px 20px #a7a5a6;
+  box-shadow: 2px 2px 15px 2px #a7a5a6;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: left;
@@ -233,12 +232,14 @@
 
 .text::after {
   position: absolute;
-  top: 0;
-  left: 0;
-  background: url(assets/img/icons/left-quote.svg);
+  top: -50px;
+  left: -40px;
+  content: url(assets/img/icons/left-quote.svg);
 }
 
 .carousel-image {
-  width: 100%;
+  width: 80%;
   height: 600px;
+  margin: 0 10px 0 auto;
+  position: relative;
 }

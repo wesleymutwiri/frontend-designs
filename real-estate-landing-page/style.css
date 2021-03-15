@@ -117,6 +117,7 @@ img {
 header {
   display: flex;
   height: 70vh;
+  margin-bottom: 10rem;
 }
 
 .container {
@@ -138,7 +139,7 @@ header {
   top: 0;
   right: 0;
   z-index: -1;
-  height: 75vh;
+  height: 85vh;
 }
 
 .large-text {
@@ -159,11 +160,11 @@ header {
   position: absolute;
   right: 0;
   left: 0;
-  top: 68vh;
+  top: 78vh;
   width: 1000px;
   background-color: white;
   margin: 0 auto;
-  box-shadow: 4px 4px 5px #a7a5a6;
+  box-shadow: 2px 4px 10px #a7a5a6;
   justify-content: space-around;
   height: 130px;
   align-items: center;
