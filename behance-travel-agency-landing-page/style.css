@@ -1,5 +1,52 @@
-*, *::::before,::after {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+:root {
+    --orange: #ef4f0b;
+    --brown: #4a291b;
+    --shade: #efdac9;
+}
+
+.dark {
+    --bg: var(--brown);
+    --font-color: var(--shade);
+    --button-color: var(--orange)
+}
+
+.light {
+    --bg: var(--shade);
+    --font-color: var(--brown);
+    --button-color: var(--orange);
+}
+
+*,
+*::before,
+::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+button {
+    font-weight: 600;
+}
+
+/* writing switch styling */
