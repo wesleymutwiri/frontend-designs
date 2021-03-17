@@ -59,6 +59,18 @@ button {
   font-weight: 600;
   outline: none;
   border: none;
+  text-transform: uppercase;
+  width: max-content;
+  height: max-content;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+header {
+    height: 100vh;
+    position: relative;
 }
 
 .navbar {
@@ -69,6 +81,12 @@ button {
 
 .nav-link {
   padding: 0 3rem;
+  cursor: pointer;
+}
+
+.social-media:hover .social-filled {
+  fill: var(--orange);
+  stroke: var(--orange);
 }
 
 .theme-toggle {
@@ -78,9 +96,110 @@ button {
   z-index: 10;
 }
 
+.button-primary {
+  padding: 1rem 4rem;
+  background: var(--orange);
+  color: var(--white);
+  border-radius: 0.5rem;
+}
+
+.button-primary:hover {
+  font-size: 1rem;
+}
+
+.button-secondary {
+  padding: 0.5rem 2rem;
+  background: none;
+  border: 1px solid var(--orange);
+  color: var(--font-color);
+  border-radius: 0.2rem;
+}
+
+.button-secondary:hover {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.button-iconed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0.5rem;
+  width: max-content;
+  height: max-content;
+}
+.button-iconed svg {
+  margin-left: 0.4rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--font-color);
+}
+
+.send-mail {
+  display: flex;
+  margin: 2rem;
+}
+
+.send-mail-button {
+  padding: 0.3rem 0.9rem;
+  background: var(--orange);
+  color: var(--white);
+}
+
+.subscribe-email {
+  background: transparent;
+  color: var(--font-color);
+  padding: 0.2rem;
+  border: 1px solid var(--orange);
+  width: 140px;
+}
+
+.subscribe-email:hover {
+  border: 2px solid var(--orange);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    text-transform: underline;
+}
+
+.text-large {
+    font-size: 12rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 .theme-toggle:checked ~ .container {
   --bg: var(--font-color);
   --font-color: var(--bg);
+}
+
+.see-more {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.see-more svg {
+    margin-right: 0.5rem;
+}
+
+main {
+    min-height: 70vh;
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: light) {
