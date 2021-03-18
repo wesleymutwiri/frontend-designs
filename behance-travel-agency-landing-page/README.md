@@ -9,4 +9,4 @@ You know the drill.
 To be done later
 
 ## Resources
-Coming soon
+[Photo by Francesco Ungaro from Pexels](https://www.pexels.com/photo/hot-air-balloon-2325447/)
