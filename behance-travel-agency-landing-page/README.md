@@ -10,3 +10,4 @@ To be done later
 
 ## Resources
 [Photo by Francesco Ungaro from Pexels](https://www.pexels.com/photo/hot-air-balloon-2325447/)
+[Photo by Taryn Elliott from Pexels](https://www.pexels.com/photo/hot-air-balloons-flying-over-the-mountains-3889704/)

@@ -85,7 +85,7 @@ header::before {
   left: 0;
   width: 50%;
   height: 100%;
-  background: rgba(74, 41, 27, 0.5);
+  background: rgba(74, 41, 27, 0.2);
   /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -93,10 +93,15 @@ header::before {
   border: 1px solid rgba(255, 255, 255, 0.18); */
 }
 
-header > * {
+header>* {
   z-index: 100;
   position: inherit;
 }
+
+.text-center {
+  text-align: center;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -152,6 +157,7 @@ header > * {
   width: max-content;
   height: max-content;
 }
+
 .button-iconed svg {
   margin-left: 0.4rem;
 }
@@ -167,7 +173,7 @@ input::placeholder {
 
 .send-mail {
   display: flex;
-  margin: 2rem;
+  /* margin: 2rem; */
 }
 
 .send-mail-button {
@@ -213,7 +219,7 @@ input[type="email"]:focus {
   margin-top: 9rem;
 }
 
-.theme-toggle:checked ~ .container {
+.theme-toggle:checked~.container {
   --bg: var(--font-color);
   --font-color: var(--bg);
 }
@@ -228,6 +234,7 @@ input[type="email"]:focus {
   font-size: 0.8rem;
   cursor: pointer;
 }
+
 .watch-video {
   background: none;
   color: var(--font-color);
@@ -279,9 +286,44 @@ input[type="email"]:focus {
 }
 
 main {
-  min-height: 70vh;
+  /* min-height: 70vh; */
   scroll-snap-align: center;
   scroll-behavior: smooth;
+  padding: 0 6rem;
+}
+
+.item-headers {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+
+.about-us {
+  margin: 8rem 0;
+  padding: 3rem;
+}
+
+.about-column {
+  margin-right: 10rem;
+}
+
+.about-text {
+  padding: 0 6rem;
+}
+
+.about-text p {
+  margin-bottom: 2rem;
+}
+
+.book-tour {
+  background: url("/assets/img/pexels-taryn-elliott-3889704.jpg");
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (prefers-color-scheme: light) {
