@@ -162,9 +162,9 @@ header>* {
   margin-left: 0.4rem;
 }
 
-input[type="text"],
-input[type="email"] {
+input {
   outline: none;
+  padding: 1rem;
 }
 
 input::placeholder {
@@ -177,7 +177,7 @@ input::placeholder {
 }
 
 .send-mail-button {
-  padding: 0.3rem 0.9rem;
+  padding: 0.6rem 0.9rem;
   background: var(--orange);
   color: var(--shade);
 }
@@ -188,6 +188,7 @@ input::placeholder {
   padding: 0.2rem;
   border: 1px solid var(--orange);
   width: 140px;
+  padding: 0.5rem;
 }
 
 .subscribe-email:hover {
@@ -407,6 +408,35 @@ main {
 }
 .image5 {
   grid-area: image5;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+}
+
+.send-button {
+  margin: 2rem 0;
+}
+
+
+.left-aligned {
+  align-items: flex-start;
+}
+
+.uppercased {
+  text-transform: uppercase;
+}
+
+.contact {
+  justify-content: space-between;
+  margin: 8rem;
+  border-bottom: 1px solid var(--font-color);
+}
+
+.spaced-between {
+  justify-content: space-around;
 }
 
 @media (prefers-color-scheme: light) {
