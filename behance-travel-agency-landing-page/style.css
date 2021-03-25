@@ -366,7 +366,7 @@ main {
 }
 
 .card {
-  box-shadow: 0px 10px 0px 0px var(--bg);
+  box-shadow: 2px 2px 4px 5px black;
 }
 
 .photos {
@@ -420,6 +420,9 @@ main {
   margin: 2rem 0;
 }
 
+.footer {
+  padding-bottom: 3rem;
+}
 
 .left-aligned {
   align-items: flex-start;
@@ -437,6 +440,21 @@ main {
 
 .spaced-between {
   justify-content: space-around;
+}
+
+.email-text {
+  text-align: justify;
+  max-width: 300px;
+}
+
+.service-card {
+  border: 1px solid var(--font-color);
+  max-width: 200px;
+  padding: 2rem;
+}
+
+.why-us {
+  margin: 8rem 0;
 }
 
 @media (prefers-color-scheme: light) {
