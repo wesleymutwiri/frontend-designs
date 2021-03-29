@@ -84,8 +84,26 @@
     </header>
     <main id="main">
       <h2 class="text-center item-headers"> 5 Reasons Why You should visit cappadocia</h2>
-      <div class="card card-carousel">
+      <div class="card card-carousel-container">
         Carousel to be done later
+        It is now later
+        <div class="carousel-container">
+          <input type="radio" name="slider" id="item-1" checked>
+          <input type="radio" name="slider" id="item-2">
+          <input type="radio" name="slider" id="item-3">
+
+          <div class="carousel-cards">
+            <label class="carousel-card" for="item-1" id="travel-1">
+              <img src="/assets/img/car-balloons.jpg" alt="">
+            </label>
+            <label  class="carousel-card" for="item-2" id="travel-2">
+              <img src="/assets/img/city-aerial.jpg" alt="">
+            </label>
+            <label class="carousel-card" for="item-3" id="travel-3">
+              <img src="/assets/img/mountains-image.jpg" alt="">
+            </label>
+          </div>
+        </div>
       </div>
       <div class="about-us">
         <div class="row">
@@ -139,15 +157,17 @@
       <button class="button-primary">Book a tour</button>
     </div>
     <div class="card why-us">
-      <h2 class="item-headers text-center">Why Us?</h2>
-      <h3>AND OUR SERVICES</h3>
+      <div class="why-us-headers">
+        <h2 class="item-headers text-center">Why Us?</h2>
+        <h3 class="text-center">AND OUR SERVICES</h3>
+      </div>
       <div class="services">
         <div class="row spaced-between">
           <div class="service-card">
             <div class="column">
 
               <div class="icon">
-                some icon  
+                some icon
               </div>
               <h4 class="uppercased">Individual Approach</h4>
               <p>It's important for us to maximize your impressions by an individual caring approach</p>
@@ -155,7 +175,7 @@
           </div>
           <div class="service-card">
             <div class="column">
-          
+
               <div class="icon">
                 some icon
               </div>
@@ -165,7 +185,7 @@
           </div>
           <div class="service-card">
             <div class="column">
-          
+
               <div class="icon">
                 some icon
               </div>
@@ -175,7 +195,7 @@
           </div>
           <div class="service-card">
             <div class="column">
-          
+
               <div class="icon">
                 some icon
               </div>
@@ -222,7 +242,9 @@
           <button class="button-primary send-button">Send</button>
         </div>
         <div class="column">
-          Additional Services
+          <h2>
+            Additional Services:
+          </h2>
         </div>
       </div>
       <div class="footer">
@@ -275,9 +297,10 @@
           <div class="column email-text">
             <h4 class="uppercased">Stay In Touch!</h4>
             <p>Subscribe to our newsletter and receive notifications of favourable offers and news.</p>
-            <p>No spam, just useful information</p>
+            <p class="text-bold">No spam, just useful information</p>
             <div class="send-mail">
-              <input type="email" name="subscribe-email" id="" class="subscribe-email" placeholder="Enter your E-mail" />
+              <input type="email" name="subscribe-email" id="" class="subscribe-email"
+                placeholder="Enter your E-mail" />
               <button class="send-mail-button">Send</button>
             </div>
           </div>

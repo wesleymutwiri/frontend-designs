@@ -85,7 +85,7 @@ header::before {
   left: 0;
   width: 50%;
   height: 100%;
-  background: rgba(74, 41, 27, 0.2);
+  background: rgba(0, 0, 0, 0.342);
   /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -329,10 +329,10 @@ main {
 
 .tour-count {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-transform: uppercase;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
   padding: 0 3rem;
 }
 
@@ -341,7 +341,7 @@ main {
 }
 
 .number-count {
-  font-size: 3.5rem;
+  font-size: 4rem;
   text-align: center;
   position: relative;
   margin-bottom: 2rem;
@@ -356,7 +356,7 @@ main {
   left: 0;
   width: 100%;
   height: 1px;
-  background: var(--font-color); 
+  background: var(--font-color);
 }
 
 .column {
@@ -366,7 +366,9 @@ main {
 }
 
 .card {
-  box-shadow: 2px 2px 4px 5px black;
+  box-shadow: 1px 0px 30px 0px rgba(0, 0, 0, 0.671);
+  padding: 5rem;
+  margin: 0 5rem;
 }
 
 .photos {
@@ -403,9 +405,11 @@ main {
 .image3 {
   grid-area: image3;
 }
+
 .image4 {
   grid-area: image4;
 }
+
 .image5 {
   grid-area: image5;
 }
@@ -445,6 +449,7 @@ main {
 .email-text {
   text-align: justify;
   max-width: 300px;
+  align-items: flex-start;
 }
 
 .service-card {
@@ -456,6 +461,92 @@ main {
 .why-us {
   margin: 8rem 0;
 }
+
+.why-us-headers {
+  margin-bottom: 3rem;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+/* carousel starts here  */
+.card-carousel-container {
+  height: 800px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.carousel-card {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  height: 100%;
+  width: 60%;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  max-height: 600px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+label img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  -o-object-fit: cover;
+}
+
+#item-1:checked~.cards #travel-3,
+#item-2:checked~.cards #travel-1,
+#item-3:checked~.cards #travel-2 {
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#item-1:checked~.cards #travel-2,
+#item-2:checked~.cards #travel-3,
+#item-3:checked~.cards #travel-1 {
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#item-1:checked~.cards #travel-1,
+#item-2:checked~.cards #travel-2,
+#item-3:checked~.cards #travel-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+#item-1:checked~.cards #travel-1 img,
+#item-2:checked~.cards #travel-2 img,
+#item-3:checked~.cards #travel-3 img {
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
 
 @media (prefers-color-scheme: light) {
   .container {
