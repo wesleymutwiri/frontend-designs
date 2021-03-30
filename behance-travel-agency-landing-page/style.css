@@ -470,9 +470,22 @@ main {
   font-weight: bold;
 }
 
+.text-light {
+  font-weight: lighter;
+}
+
+.carousel-heading {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
 /* carousel starts here  */
 .card-carousel-container {
   height: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 input[type=radio] {
@@ -492,14 +505,10 @@ input[type=radio] {
 
 .carousel-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   height: 100%;
   max-height: 600px;
   transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
 
 .carousel-cards {
@@ -517,26 +526,26 @@ label img {
   -o-object-fit: cover;
 }
 
-#item-1:checked~.cards #travel-3,
-#item-2:checked~.cards #travel-1,
-#item-3:checked~.cards #travel-2 {
-  transform: translatex(-40%) scale(0.8);
+#item-1:checked~.carousel-cards #travel-3,
+#item-2:checked~.carousel-cards #travel-1,
+#item-3:checked~.carousel-cards #travel-2 {
+  transform: translateX(-40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
 
-#item-1:checked~.cards #travel-2,
-#item-2:checked~.cards #travel-3,
-#item-3:checked~.cards #travel-1 {
-  transform: translatex(40%) scale(0.8);
+#item-1:checked~.carousel-cards #travel-2,
+#item-2:checked~.carousel-cards #travel-3,
+#item-3:checked~.carousel-cards #travel-1 {
+  transform: translateX(40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
 }
 
-#item-1:checked~.cards #travel-1,
-#item-2:checked~.cards #travel-2,
-#item-3:checked~.cards #travel-3 {
-  transform: translatex(0) scale(1);
+#item-1:checked~.carousel-cards #travel-1,
+#item-2:checked~.carousel-cards #travel-2,
+#item-3:checked~.carousel-cards #travel-3 {
+  transform: translate(0) scale(1);
   opacity: 1;
   z-index: 1;
 }
@@ -547,6 +556,19 @@ label img {
   box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
 
+
+.carousel-extra-details {
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.carousel-extra-details p{
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
 
 @media (prefers-color-scheme: light) {
   .container {
