@@ -56,6 +56,52 @@ a {
   text-transform: uppercase;
 }
 
+ul {
+  /* list-style-type:circle; */
+  position: relative;
+  /* list-style-image: url("assets/img/circle.svg"); */
+  list-style-type: none;
+  color: var(--font-color);
+}
+
+li::before {
+  content: '○';
+  vertical-align: middle;
+  line-height: 20px;
+  position: absolute;
+  left: -19px;
+}
+
+ul::before {
+  content: '';
+  height: 110%;
+  background: var(--font-color);
+  width: 1px;
+  position: absolute;
+  left: -12px;
+  top: -11px;
+  bottom: 0;
+}
+
+.reverse {
+  max-width: 250px;
+  margin-bottom: 6rem;
+}
+
+.reverse::before {
+  right: -12px;
+  left: unset;
+}
+
+.reverse li::before {
+  left: unset;
+  right: -19px;
+}
+
+.reverse li {
+  padding: 1rem 0;
+}
+
 button {
   font-weight: 600;
   outline: none;
@@ -118,6 +164,7 @@ header > * {
 .nav-link {
   padding: 0 3rem;
   cursor: pointer;
+  color: var(--shade);
 }
 
 .social-media:hover .social-filled {
@@ -130,6 +177,37 @@ header > * {
   bottom: 20px;
   right: 20px;
   z-index: 10;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.toggle-label {
+  background-color: var(--font-color);
+  width: 100px;
+  height: 50px;
+  z-index: 10;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 100px;
+}
+
+.toggle-label::before {
+  content: '';
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: var(--bg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform .9s;
+}
+
+.theme-toggle:checked ~ .container > .toggle-label::before {
+  transform: translate(100%);
+  background-color: var(--bg);
 }
 
 .button-primary {
@@ -241,11 +319,12 @@ input[type="email"]:focus {
   text-transform: uppercase;
   font-size: 0.8rem;
   cursor: pointer;
+  color: var(--shade);
 }
 
 .watch-video {
   background: none;
-  color: var(--font-color);
+  color: var(--shade);
 }
 
 .watch-video svg {
@@ -280,7 +359,7 @@ input[type="email"]:focus {
 }
 
 .price-table {
-  width: 600px;
+  width: 50%;
   height: 120px;
   display: flex;
   justify-content: space-around;
@@ -486,7 +565,7 @@ main {
 
 .carousel-heading {
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 /* carousel starts here  */
