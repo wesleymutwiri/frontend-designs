@@ -16,3 +16,4 @@ To be done later
 [Photo by Shvets Anna from Pexels](https://www.pexels.com/photo/rock-formations-in-the-middle-of-town-2563680/)
 [Photo by Alex Azabache from Pexels](https://www.pexels.com/photo/flying-hot-air-balloons-3264734/)
 [Photo by Shvets Anna from Pexels](https://www.pexels.com/photo/aerial-photography-of-city-2563678/)
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

@@ -543,8 +543,13 @@ main {
 
 .service-card {
   border: 1px solid var(--font-color);
-  max-width: 200px;
+  max-width: 250px;
+  text-align: center;
   padding: 2rem;
+}
+
+.service-card h4 {
+  margin: 0.5rem 0;
 }
 
 .why-us {
