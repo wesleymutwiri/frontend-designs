@@ -32,7 +32,7 @@ a {
 h2 {
     font-size: 3rem;
     font-weight: 500;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
 }
 
 /* .container {
@@ -106,6 +106,12 @@ button {
     margin: 1rem 0;
 }
 
+.column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
 .subscribe {
     background: #86a59c;
     position: relative;
@@ -114,6 +120,8 @@ button {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 0 9rem;
+    height: 1000px;
+    width: 60%;
     /* align-items: center; */
 }
 
@@ -126,12 +134,6 @@ button {
 .subscribe h2,
 .subscribe .green-underline::after {
     color: #fff;
-}
-
-.column {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
 }
 
 h6 {
@@ -184,6 +186,7 @@ p {
     font-size: 0.9rem;
     max-width: 300px;
     color: #979797;
+    margin-bottom: 2rem;
 }
 
 .about {
@@ -233,6 +236,8 @@ p {
 .work-links {
     display: flex;
     justify-content: space-around;
+    padding: 3rem 0;
+    margin: 3rem 0;
 }
 
 .work-links a {
@@ -280,6 +285,92 @@ p {
     /* margin-left: 2rem; */
 }
 
+.overlap {
+    width: 60%;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    height: 800px;
+    z-index: 1;
+}
+
+.overlap::after {
+    content: 'More';
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    right: 0;
+    border-radius: 50%;
+    background: #fff;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.overlap::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: -88px;
+    right: 0;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #fff;
+    height: 180px;
+    width: 180px;
+}
+
+.overlap:hover.overlap::before {
+    animation: pulse 2s infinite;
+}
+
+.overlap:hover.overlap::before,
+.overlap:hover.overlap::after {
+    transform: scale(1.1);
+}
+
+.overlap::before {}
+
+.newsletter {
+    position: relative;
+    height: max-content;
+}
+
+.footer-links a {
+    padding: 0 1rem;
+}
+
+.image-card {
+    position: relative;
+}
+
+.text-white {
+    color: white;
+}
+
+.image-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.practice-everyone {
+    background-color: #f2f2f2;
+}
+
+.phone {
+    background: #fff;
+    padding: 2rem 0;
+}
+
 @keyframes link-animate {
     0% {
         width: 0%;
@@ -323,5 +414,15 @@ p {
 
     100% {
         width: 100%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, .2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 100px rgba(0, 0, 0, 0);
     }
 }
