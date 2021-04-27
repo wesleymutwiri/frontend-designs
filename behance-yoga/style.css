@@ -193,7 +193,7 @@ p {
     background-color: #f2f2f2;
     position: relative;
     z-index: 1;
-    padding-bottom: 10rem;
+    padding-bottom: 2rem;
 }
 
 .about-cards {
@@ -286,7 +286,7 @@ p {
 }
 
 .overlap {
-    width: 60%;
+    width: 50%;
     position: absolute;
     top: 10%;
     right: 0;
@@ -369,6 +369,43 @@ p {
 .phone {
     background: #fff;
     padding: 2rem 0;
+}
+
+.carousel-textbox {
+    display: flex;
+    position: absolute;
+    bottom: 158px;
+    right: 144px;
+    align-items: center;
+}
+
+.carousel-textbox-heading h5 {
+    font-weight: 100;
+}
+
+.play-button {
+    background: #fff;
+    padding: 2.7rem;
+    /* height: 100%; */
+}
+
+.carousel-textbox-heading {
+    background: #000;
+    color: #fff;
+    font-weight: 300;
+    padding: 2rem;
+}
+
+.why {
+    padding-top: 6rem;
+}
+
+.app-image {
+    padding: 2rem 1rem;
+    align-items: center;
+    margin: 0 auto;
+    width: 400px;
+    height: 600px;
 }
 
 @keyframes link-animate {
