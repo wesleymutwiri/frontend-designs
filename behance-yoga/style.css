@@ -193,7 +193,7 @@ p {
     background-color: #f2f2f2;
     position: relative;
     z-index: 1;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .about-cards {
@@ -348,6 +348,7 @@ p {
 
 .image-card {
     position: relative;
+    margin: 10px 20px;
 }
 
 .text-white {
@@ -357,13 +358,14 @@ p {
 .image-description {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 70px;
     right: 0;
     z-index: 2;
+    letter-spacing: 1px;
 }
 
 .practice-everyone {
-    background-color: #f2f2f2;
+    /* background-color: #f2f2f2; */
 }
 
 .phone {
@@ -376,9 +378,9 @@ p {
     width: 250px;
     /* background: linear-gradient(56deg, rgba(158, 215, 214, 1) 0%, rgba(158, 215, 214, 1) 50%, rgba(115, 202, 205, 1) 100%); */
     border-radius: 16px;
-    border: 10px solid #fff;
-    border-bottom: 50px solid #fff;
-    border-top: 30px solid #fff;
+    border: 10px solid rgb(255, 255, 255);
+    border-bottom: 60px solid #fff;
+    border-top: 50px solid #fff;
     align-self: center;
 }
 
@@ -387,12 +389,12 @@ p {
     position: absolute;
     border-radius: 50%;
     background: #fff;
-    box-shadow: 0px 2px 0px #000 inset;
+    box-shadow: -1px -1px 3px #000;
     left: 50%;
     transform: translateX(-50%);
-    height: 20px;
-    width: 20px;
-    bottom: -34px;
+    height: 30px;
+    width: 30px;
+    bottom: -46px;
 }
 
 .phone::before {
@@ -428,7 +430,7 @@ p {
 .carousel-textbox-heading {
     background: #000;
     color: #fff;
-    font-weight: 300;
+    font-weight: 100;
     padding: 2rem;
 }
 
@@ -442,6 +444,33 @@ p {
     margin: 0 auto;
     width: 400px;
     height: 600px;
+}
+
+.app {
+    padding-top: 8rem;
+}
+
+.slider-image {
+    position: relative;
+}
+
+.slider-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+}
+
+.control {
+    background: #fff;
+    padding: 1rem;
+}
+
+.control:hover {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
 }
 
 @keyframes link-animate {
