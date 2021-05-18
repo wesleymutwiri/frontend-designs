@@ -382,6 +382,7 @@ p {
     border-bottom: 60px solid #fff;
     border-top: 50px solid #fff;
     align-self: center;
+    box-shadow: 10px 10px 0px 2px #dbdbdb;
 }
 
 .phone::after {
@@ -460,6 +461,12 @@ p {
     left: 0;
     z-index: 2;
     display: flex;
+}
+
+.slider-controls.controls-right {
+    top: 0;
+    right: 0;
+    left: unset;
 }
 
 .control {
