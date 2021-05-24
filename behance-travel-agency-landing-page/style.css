@@ -253,7 +253,7 @@ input {
 }
 
 input::placeholder {
-  color: var(--font-color);
+  /* color: var(--font-color); */
 }
 
 .send-mail {
@@ -475,7 +475,6 @@ main {
   width: 85%;
   margin: 3rem auto;
   gap: 1rem;
-  grid-auto-rows: 350px;
 }
 
 .photo-grid img {
@@ -546,6 +545,7 @@ main {
   max-width: 250px;
   text-align: center;
   padding: 2rem;
+  height: 350px;
 }
 
 .service-card h4 {
@@ -667,5 +667,44 @@ label img {
   .container {
     --bg: var(--font-color);
     --font-color: var(--bg);
+  }
+}
+
+@media screen and (max-width: 1485px) {
+  .text-large {
+    font-size: 8rem; 
+  }
+  .photo-grid {
+    width: 100%;
+  }
+  main {
+    padding: unset;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .card {
+    margin: unset;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .text-large {
+    font-size: 6rem;
+  }
+  .text-small {
+    margin-bottom: 3rem;
+  }
+  .price-table {
+    display: none;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .text-large {
+    font-size: 5rem;
   }
 }
